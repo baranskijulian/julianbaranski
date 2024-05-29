@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="timer">Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark" style="background-color: #525C66;">
+    <nav class="bg-dark p-3 text-light flex container-fluid navbar sticky-top"> 
+        <div class="container-fluid row">
+
+        </div>
+        <div class="col " > 
+            <h1>Geografia Europy</h1>
+            
+            <a class="me-4 text-decoration-none text-light" href="index.html"> ● Strona główna</a>
+            <a class="me-4 text-decoration-none text-light" href="Quiz.html"> ● Quiz o flagach</a>
+            <a class="me-4 text-decoration-none text-light" href="Kontakt.html"> ● Kontakt</a>
+            <a class="me-4 text-decoration-none text-light" href="galeria.html"> ● Galeria</a>
+            <a class="me-4 text-decoration-none text-light" href="Wskaźnik urbanizacji.html"> ● Wskaźnik urbanizacji</a>
+        </div>
+        <div class="col text-center">
+            <p id="godzina"></p>
+            <p id="ileczasujuztusiedzisz"></p>
+
+        </div>
+        <div class="text-light col d-flex justify-content-center">
+            <div class="container ms-auto d-flex justify-content-end align-items-center">
+                <a href="Zaloguj.html" class="me-5 text-decoration-none text-light">●zaloguj się</a>
+                <a href="login.html" class="text-decoration-none text-light">●zarejestruj się</a>
+            </div>
+            <div style="height: 100px; width: 100px; color: aliceblue;" class="ms-auto d-flex align-items-center justify-content-center">
+                <img src="menu.png" class=" w-100 h-90  cover" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+    
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Państwa</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body text-light">
+            
+            <a href="Państwa Skandynawskie.html" class=" text-decoration-none text-dark"><p>Państwa Skandynawskie</p></a>
+            <hr>
+            <a href="Grupa Wyszechradzka.html" class=" text-decoration-none text-dark"><p>Grupa Wyszechradzka</p></a>
+            <hr>
+            <a href="Państwa UE.html" class=" text-decoration-none text-dark"><p>Państwa UE</p></a>
+            <hr>
+            <a href="Bałkany.html" class=" text-decoration-none t text-dark"><p>Bałkany</p></a>
+            <hr>
+            <a href="Benelux.html" class=" text-decoration-none text-dark"><p>Benelux</p></a>
+            <hr>
+            <a href="Państwa Bałtyckie.html" class=" text-decoration-none text-dark"><p>Państwa Bałtyckie</p></a>
+        </div>
+
+ 
+
+    </div>
+<div class="intro">
+    
+</div>
+<div style="font-family: 'Times New Roman', Times, serif; font-size: 30px; background-color: #435C68; color: aliceblue;" class="container border border-secondary border-4 mt-5" >
+    <p> 
+        Na terenie Europy w całości lub częściowo znajduje się 47 państw uznawanych na arenie międzynarodowej. Ponadto do Europy zalicza się siedem terytoriów zależnych Danii, Norwegii i Wielkiej Brytanii. W Europie funkcjonuje również jedno państwo częściowo uznawane (Kosowo) oraz jedno państwo nieuznawane (Naddniestrze).
+
+        Największym europejskim państwem jest Rosja (17 098 242 km²), natomiast największym państwem znajdującym się w całości na terytorium Europy jest Ukraina (603 550 km²). Najludniejszym państwem na kontynencie europejskim również jest Rosja (142 021 981 mieszkańców), a najludniejszym państwem położonym w całości w Europie są Niemcy (84 316 622 mieszkańców). Najmniejszym zarówno pod względem powierzchni, jak i liczby ludności jest Watykan (0,44 km²; 825 mieszkańców).</p>
+</div>
+
+<hr>
+<hr>
+
+<div class="container">
+    <title>Państwa Europy</title>
+   <div class="table-responsive">
+       <table class="table table-dark table-striped table-bordered">
+          
+  
+           <thead>
+               <tr>
+                   <th scope="col">Państwo</th>
+                   <th scope="col">Stolica</th>
+                   <th scope="col">Powierzchnia (km²)</th>
+                   <th scope="col">Liczba mieszkańców</th>
+                   <th scope="col">Język</th>
+                   <th scope="col">Waluta</th>
+               </tr>
+           </thead>
+           <tbody>
+               
+               <tr>
+                   <td>Albania</td>
+                   <td>Tirana</td>
+                   <td>28,748</td>
+                   <td>2,871,797</td>
+                   <td>Albański</td>
+                   <td>Lek</td>
+               </tr>
+              
+               <tr>
+                   <td>Andora</td>
+                   <td>Andora</td>
+                   <td>468</td>
+                   <td>77,281</td>
+                   <td>Kataloński</td>
+                   <td>Euro</td>
+               </tr>
+               
+               <tr>
+                   <td>Austria</td>
+                   <td>Wiedeń</td>
+                   <td>83,879</td>
+                   <td>8,858,775</td>
+                   <td>Niemiecki</td>
+                   <td>Euro</td>
+               </tr>
+              
+               <tr>
+                   <td>Belgia</td>
+                   <td>Bruksela</td>
+                   <td>30,528</td>
+                   <td>11,492,641</td>
+                   <td>Niderlandzki, Francuski, Niemiecki</td>
+                   <td>Euro</td>
+               </tr>
+              
+               <tr>
+                   <td>Bułgaria</td>
+                   <td>Sofia</td>
+                   <td>110,994</td>
+                   <td>6,951,482</td>
+                   <td>Bułgarski</td>
+                   <td>Lew</td>
+               </tr>
+              
+               <tr>
+                   <td>Chorwacja</td>
+                   <td>Zagrzeb</td>
+                   <td>56,594</td>
+                   <td>4,067,500</td>
+                   <td>Chorwacki</td>
+                   <td>Kuna</td>
+               </tr>
+              
+               <tr>
+                   <td>Cypr</td>
+                   <td>Nikozja</td>
+                   <td>9,251</td>
+                   <td>1,207,359</td>
+                   <td>Grecki, Turecki</td>
+                   <td>Euro</td>
+               </tr>
+              
+               <tr>
+                   <td>Czarnogóra</td>
+                   <td>Podgorica</td>
+                   <td>13,812</td>
+                   <td>622,359</td>
+                   <td>Czarnogórski</td>
+                   <td>Euro</td>
+               </tr>
+               
+               <tr>
+                   <td>Czechy</td>
+                   <td>Praga</td>
+                   <td>78,866</td>
+                   <td>10,693,939</td>
+                   <td>Czeski</td>
+                   <td>Korona czeska</td>
+               </tr>
+               
+               <tr>
+                   <td>Dania</td>
+                   <td>Kopenhaga</td>
+                   <td>42,933</td>
+                   <td>5,806,015</td>
+                   <td>Duński</td>
+                   <td>Korona duńska</td>
+               </tr>
+              
+               <tr>
+                   <td>Estonia</td>
+                   <td>Tallinn</td>
+                   <td>45,227</td>
+                   <td>1,328,976</td>
+                   <td>Estoński</td>
+                   <td>Euro</td>
+               </tr>
+               
+               <tr>
+                   <td>Finlandia</td>
+                   <td>Helsinki</td>
+                   <td>338,424</td>
+                   <td>5,513,130</td>
+                   <td>Fiński, Szwedzki</td>
+                   <td>Euro</td>
+               </tr>
+               <tr>
+                   <td>Francja</td>
+                   <td>Paryż</td>
+                   <td>643,801</td>
+                   <td>67,081,000</td>
+                   <td>Francuski</td>
+                   <td>Euro</td>
+                </tr>
+                <tr>
+                   <td>Grecja</td>
+                   <td>Ateny</td>
+                   <td>131,957</td>
+                   <td>10,423,054</td>
+                   <td>Grecki</td>
+                   <td>Euro</td>
+               </tr>
+              
+               <tr>
+                   <td>Hiszpania</td>
+                   <td>Madryt</td>
+                   <td>505,990</td>
+                   <td>47,450,795</td>
+                   <td>Hiszpański</td>
+                   <td>Euro</td>
+               </tr>
+              
+               <tr>
+                   <td>Holandia</td>
+                   <td>Amsterdam</td>
+                   <td>41,543</td>
+                   <td>17,474,700</td>
+                   <td>Holenderski</td>
+                   <td>Euro</td>
+               </tr>
+               
+               <tr>
+                   <td>Irlandia</td>
+                   <td>Dublin</td>
+                   <td>70,273</td>
+                   <td>4,726,856</td>
+                   <td>Irlandzki</td>
+                   <td>Euro</td>
+               </tr>
+             
+               <tr>
+                   <td>Islandia</td>
+                   <td>Reykjavik</td>
+                   <td>103,000</td>
+                   <td>364,134</td>
+                   <td>Islandzki</td>
+                   <td>Korona islandzka</td>
+               </tr>
+               
+               <tr>
+                   <td>Liechtenstein</td>
+                   <td>Vaduz</td>
+                   <td>160</td>
+                   <td>38,557</td>
+                   <td>Niemiecki</td>
+                   <td>Frank szwajcarski</td>
+               </tr>
+               
+               <tr>
+                   <td>Litwa</td>
+                   <td>Wilno</td>
+                   <td>65,300</td>
+                   <td>2,722,289</td>
+                   <td>Litewski</td>
+                   <td>Euro</td>
+               </tr>
+              
+               <tr>
+                   <td>Luksemburg</td>
+                   <td>Luksemburg</td>
+                   <td>2,586</td>
+                   <td>634,730</td>
+                   <td>Luksemburski, Francuski, Niemiecki</td>
+                   <td>Euro</td>
+               </tr>
+              
+               <tr>
+                   <td>Łotwa</td>
+                   <td>Ryga</td>
+                   <td>64,589</td>
+                   <td>1,919,968</td>
+                   <td>Łotewski</td>
+                   <td>Euro</td>
+               </tr>
+               
+               <tr>
+                   <td>Macedonia Północna</td>
+                   <td>Skopje</td>
+                   <td>25,713</td>
+                   <td>2,077,132</td>
+                   <td>Macedoński</td>
+                   <td>Denar</td>
+               </tr>
+               
+               <tr>
+                   <td>Malta</td>
+                   <td>Valletta</td>
+                   <td>316</td>
+                   <td>514,564</td>
+                   <td>Maltański, Angielski</td>
+                   <td>Euro</td>
+               </tr>
+               
+               <tr>
+                   <td>Mołdawia</td>
+                   <td>Kiszyniów</td>
+                   <td>33,846</td>
+                   <td>2,640,438</td>
+                   <td>Mołdawski</td>
+                   <td>Lej</td>
+               </tr>
+               
+               <tr>
+                   <td>Monako</td>
+                   <td>Monako</td>
+                   <td>2</td>
+                   <td>38,300</td>
+                   <td>Francuski, Monakijski</td>
+                   <td>Euro</td>
+               </tr>
+               
+               <tr>
+                   <td>Niemcy</td>
+                   <td>Berlin</td>
+                   <td>357,022</td>
+                   <td>83,190,556</td>
+                   <td>Niemiecki</td>
+                   <td>Euro</td>
+               </tr>
+               
+               <tr>
+                   <td>Norwegia</td>
+                   <td>Oslo</td>
+                   <td>323,802</td>
+                   <td>5,440,497</td>
+                   <td>Norweski</td>
+                   <td>Korona norweska</td>
+               </tr>
+               
+               <tr>
+                   <td>Polska</td>
+                   <td>Warszawa</td>
+                   <td>312,696</td>
+                   <td>38,654,478</td>
+                   <td>Polski</td>
+                   <td>Złoty</td>
+               </tr>
+               
+               <tr>
+                   <td>Portugalia</td>
+                   <td>Lizbona</td>
+                   <td>92,212</td>
+                   <td>10,295,714</td>
+                   <td>Portugalski</td>
+                   <td>Euro</td>
+               </tr>
+               
+               <tr>
+                   <td>Rosja</td>
+                   <td>Moskwa</td>
+                   <td>17,098,242</td>
+                   <td>145,734,038</td>
+                   <td>Rosyjski</td>
+                   <td>Rubel</td>
+               </tr>
+               
+               <tr>
+                   <td>Rumunia</td>
+                   <td>Bukareszt</td>
+                   <td>238,397</td>
+                   <td>19,237,691</td>
+                   <td>Rumuński</td>
+                   <td>Lej rumuński</td>
+               </tr>
+               
+               <tr>
+                   <td>San Marino</td>
+                   <td>San Marino</td>
+                   <td>61</td>
+                   <td>33,785</td>
+                   <td>Włoski</td>
+                   <td>Euro</td>
+               </tr>
+               
+               <tr>
+                   <td>Serbia</td>
+                   <td>Belgrad</td>
+                   <td>88,361</td>
+                   <td>8,720,483</td>
+                   <td>Serbski</td>
+                   <td>Dinar serbski</td>
+               </tr>
+               
+               <tr>
+                   <td>Słowacja</td>
+                   <td>Bratysława</td>
+                   <td>49,035</td>
+                   <td>5,459,781</td>
+                   <td>Słowacki</td>
+                   <td>Euro</td>
+               </tr>
+               
+               <tr>
+                   <td>Słowenia</td>
+                   <td>Lublana</td>
+                   <td>20,273</td>
+                   <td>2,078,654</td>
+                   <td>Słoweński</td>
+                   <td>Euro</td>
+               </tr>
+               
+               <tr>
+                   <td>Szwajcaria</td>
+                   <td>Bern</td>
+                   <td>41,290</td>
+                   <td>8,654,622</td>
+                   <td>Niemiecki, Francuski, Włoski</td>
+                   <td>Frank szwajcarski</td>
+               </tr>
+               
+               <tr>
+                   <td>Szwecja</td>
+                   <td>Stockholm</td>
+                   <td>450,295</td>
+                   <td>10,433,590</td>
+                   <td>Szwedzki</td>
+                   <td>Korona szwedzka</td>
+               </tr>
+               
+               <tr>
+                   <td>Ukraina</td>
+                   <td>Kijów</td>
+                   <td>603,628</td>
+                   <td>41,660,982</td>
+                   <td>Ukraiński</td>
+                   <td>Hrywna</td>
+               </tr>
+               
+               <tr>
+                   <td>Węgry</td>
+                   <td>Budapeszt</td>
+                   <td>93,028</td>
+                   <td>9,825,704</td>
+                   <td>Węgierski</td>
+                   <td>Forint</td>
+               </tr>
+               
+               <tr>
+                   <td>Wielka Brytania</td>
+                   <td>Londyn</td>
+                   <td>243,610</td>
+                   <td>66,647,112</td>
+                   <td>Angielski</td>
+                   <td>Funt szterling</td>
+               </tr>
+               
+               <tr>
+                   <td>Włochy</td>
+                   <td>Rzym</td>
+                   <td>301,340</td>
+                   <td>60,461,826</td>
+                   <td>Włoski</td>
+                   <td>Euro</td>
+               </tr>
+           </tbody>
+       </table>
+   </div>
+           </div>
+
+
+<hr>
+<hr>
+
+
+<div style="font-family: 'Times New Roman', Times, serif; font-size: 30px; background-color: #435C68; color: aliceblue;" class="container border border-secondary border-4 mt-5" >
+    <p> Europa w przeciwieństwie do większości pozostałych kontynentów nie ma jasno określonych naturalnych granic. Umowna granica Europa-Azja nie ma jednoznacznie wytyczonego przebiegu; powszechnie przyjmuje się tylko, że wyznaczają ją góry Ural, Morze Kaspijskie, Obniżenie Kumsko-Manyckie, Morze Czarne, cieśniny Bosfor i Dardanele i Morze Egejskie. Przebieg granicy na południe od gór Uralu i kwestia przynależności Kaukazu do Europy są przedmiotem kontrowersji. Od Afryki Europę oddziela Morze Śródziemne, z najwęższym miejscem w Cieśninie Gibraltarskiej (14 km szerokości). Zachodnią granicę wyznacza Ocean Atlantycki, na którym leży kilka wysp umownie zaliczanych do Europy (nie leżą na jej szelfie kontynentalnym): Islandia i archipelag Azory (położone aż 1500 km od Portugalii). Wyspa Flores to w takim podziale najbardziej na zachód wysunięta część Europy.</p>
+</div>
+            
+
+<hr>
+<hr>
+
+<div style="font-family: 'Times New Roman', Times, serif; font-size: 30px; background-color: #435C68; color: aliceblue;" class="container border border-secondary border-4 mt-5" >
+    <p> Unia europejska to gospodarczo-polityczny związek 27 demokratycznych państw europejskich. Unia powstała 1 listopada 1993 roku na mocy podpisanego 7 lutego 1992 traktatu z Maastricht[10] – jako efekt wieloletniego procesu integracji politycznej, gospodarczej i społecznej. Korzenie współczesnej integracji europejskiej sięgają okresu powojennego i ograniczały się do 6 państw zachodnioeuropejskich. Państwa te tworzyły wiele form i mechanizmów współpracy, powoływały organizacje, instytucje i organy, których celem było wzmocnienie jedności między nimi. W 1993 nadrzędną wobec wszystkich poprzednich organizacji została Unia Europejska, sama otrzymując nieznaną wcześniej hybrydową formułę sui generis[12].  Unia Europejska jako organizacja międzynarodowa (w międzynarodowoprawnym tego słowa znaczeniu) funkcjonuje od 1 grudnia 2009. Równocześnie zastąpiła ona kilka form współpracy, w tym m.in. Wspólnotę Europejską. Proces integracji wykracza poza ściśle określone ramy geograficzne Europy. W określeniu europejskości Unii naczelną rolę odgrywają czynniki historyczne i kulturowe oraz wspólna tożsamość i identyfikacja z wartościami demokratycznymi. </p>
+</div>
+
+<hr>
+<hr>
+
+<div class="container justify-content-center d-flex">
+    <img src="EU flag.jpg" style="width:1100px ;height:650px ;">
+    </div>
+<hr>
+<hr>
+
+<div class="container-fluid d-flex justify-content-center">
+
+    <img src="mapa z ikonkami.png" alt="" usemap="#123" style="border: 6px solid cadetblue; width: 720px; height: 564px;" class="m-0" >
+<map name="123">
+    <area shape="rect" coords="300 350 310 370" href="Parlament UE.html">
+    <area shape="rect" coords="390 460 410 480" href="Watykan.html">
+    <area shape="rect" coords="425 330 445 320" href="PUT.html">
+</map>
+
+
+</div>
+
+<hr>
+<hr>
+
+    <script>
+
+        timer = document.getElementById("ileczasujuztusiedzisz")
+        timernow = document.getElementById('godzina')
+
+
+
+        if(sessionStorage.getItem("time")==null) sessionStorage.setItem("time", 0)
+
+            
+            setInterval( () => {
+               
+                const czas = new Date
+
+                timernow.innerHTML = `Zegar:  ${czas}`
+                time = parseInt(sessionStorage.getItem("time"))
+                sessionStorage.setItem("time", time+1)
+               timer.innerHTML = `Czas na stronie:  ${Math.floor(((time+1)/60)/60)%1000}h:${Math.floor(((time+1)/60))%60}m:${Math.floor((time+1)%60)}s`
+                
+            },1000)
+    </script>
+
+
+<h3>
+    <br>
+    <div id="wizyty" style="color: aliceblue" class="container border border-secondary border-4 mt-5" class="text mt-5"><p class="text-center">Strona została odwiedzona już tyle razy: <span id="licznik_wizyt">0</span>
+    </p>
+        
+        </div>
+        <script src="../js/licznikwejsc.js"></script>
+    </h3>
+    <script> 
+    
+    let licznik_wizyt=document.getElementById("licznik_wizyt")
+    
+    function Aktualizuj_licznik_wizyt() {
+
+        var Licznik_wizyt = sessionStorage.getItem('licznik_wizyt');
+    
+        if (!Licznik_wizyt) {
+          Licznik_wizyt = 0;
+        }
+    
+        Licznik_wizyt++;
+    
+        sessionStorage.setItem('licznik_wizyt', Licznik_wizyt);
+        document.getElementById('licznik_wizyt').textContent = Licznik_wizyt;
+    
+    }
+
+Aktualizuj_licznik_wizyt()
+
+</script>
+<div class="container-fluid d-flex align-items-center">
+<canvas width="400" height="400" id="canvas" style="margin-left: auto; margin-right: auto;"></canvas>
+</div>
+<script>
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+let radius = canvas.height / 2;
+ctx.translate(radius, radius);
+radius = radius * 0.90
+setInterval(drawClock, 1000);
+
+function drawClock() {
+  drawFace(ctx, radius);
+  drawNumbers(ctx, radius);
+  drawTime(ctx, radius);
+}
+const img = new Image();
+
+function drawFace(ctx, radius) {
+  const grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+  grad.addColorStop(0, '#f5f5f5');
+  grad.addColorStop(0.5, '#f5f5f5');
+  grad.addColorStop(1, '#f5f5f5');
+  ctx.beginPath();   ctx.arc(0, 0, radius, 0, 2*Math.PI);   ctx.fillStyle = '#001489';   ctx.fill();   ctx.strokeStyle = grad;   ctx.lineWidth = radius*0.1;   ctx.stroke();   ctx.beginPath();   ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);   ctx.fillStyle = '#f5f5f5';   ctx.fill();
+}
+
+function drawNumbers(ctx, radius) {
+  ctx.font = radius*0.15 + "px arial";
+  ctx.textBaseline="middle";
+  ctx.textAlign="center";
+  for(let num = 1; num < 13; num++){
+    let ang = num * Math.PI / 6;
+    ctx.rotate(ang);
+    ctx.translate(0, -radius*0.85);
+    ctx.rotate(-ang);
+    ctx.drawImage(img, -20, -20, 40, 40);
+    ctx.rotate(ang);
+    ctx.translate(0, radius*0.85);
+    ctx.rotate(-ang);
+  }
+  img.src = "gwiazda (2).png";
+
+}
+
+function drawTime(ctx, radius){
+    const now = new Date();
+    let hour = now.getHours();
+    let minute = now.getMinutes();
+    let second = now.getSeconds();
+    //hour
+    hour=hour%12;
+    hour=(hour*Math.PI/6)+
+    (minute*Math.PI/(6*60))+
+    (second*Math.PI/(360*60));
+    drawHand(ctx, hour, radius*0.5, radius*0.07);
+    //minute
+    minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+    drawHand(ctx, minute, radius*0.8, radius*0.07);
+    // second
+    second=(second*Math.PI/30);
+    drawHand(ctx, second, radius*0.9, radius*0.02);
+}
+
+function drawHand(ctx, pos, length, width) {
+    ctx.beginPath();
+    ctx.lineWidth = width;
+    ctx.lineCap = "round";
+    ctx.moveTo(0,0);
+    ctx.rotate(pos);
+    ctx.lineTo(0, -length);
+    ctx.stroke();
+    ctx.rotate(-pos);
+}
+    
+</script>
+
+
+
+<footer>
+    <div class="container-fluid bg-light m-0 p-4 justify-content-center align-items-center d-flex">
+
+        <p>Julian Barański "Projekt strony internetowej wykonany w ramach zaliczenia przedmiotu MO: TliSKwE na kierunku Energetyka."</p>
+
+    </div>
+
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

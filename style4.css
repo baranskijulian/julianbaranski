@@ -1,0 +1,17 @@
+.offcanvas-body p {
+    border: 1px solid grey;
+    padding:5px;
+    border-right: 0; 
+    border-left: 0; 
+    border-top: 0;
+}
+
+.offcanvas-body p:first-of-type {
+    border-top: 1px solid grey;
+}
+.intro{
+    background-image: url(Bałkany\ mapa.jpg); width: 100%; height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
